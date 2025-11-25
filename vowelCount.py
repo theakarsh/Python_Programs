@@ -1,5 +1,6 @@
 # Write a function that takes String as input & returns count of Vowel present in String.
 
+userInput = input("Enter a string: ")
 def vowelConsCount(userInput):
     vowels = "aeiouAEIOU"
     countVowel = 0
@@ -12,6 +13,6 @@ def vowelConsCount(userInput):
             else:
                 countConsonants += 1
     return countVowel, countConsonants
-vowels, consonants = vowelConsCount("Akarsh Singh")
+vowels, consonants = vowelConsCount(userInput)
 print(f"Vowels present : {vowels}")
 print(f"Consonants present : {consonants}")
